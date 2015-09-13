@@ -1,6 +1,8 @@
 <?php
 
-  $answer = $_POST['number'];
+  $number = $_POST['number'];
+    $multiplier = $_POST['multiplier'];
+
 
 
 ?>
@@ -16,7 +18,7 @@
     <p> the number</p>
 
     <?php
-echo ($answer*16);
+echo ($number*$multiplier);
 
     ?>
 
