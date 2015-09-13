@@ -1,3 +1,11 @@
+<?php
+
+  $answer = $_POST['number'];
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,7 +16,7 @@
     <p> the number</p>
 
     <?php
-return "your answer here";
+echo ($answer*16);
 
     ?>
 
