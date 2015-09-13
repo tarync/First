@@ -1,9 +1,15 @@
 <?php
+$number = $_POST['number'];
+$multiplier = $_POST['multiplier'];
 
-  $number = $_POST['number'];
-    $multiplier = $_POST['multiplier'];
+function multiply($numbera, $numberb)
+{
+  $result = ($numbera*$numberb);
+  return $result;
+}
 
 
+$answer = multiply($number, $multiplier);
 
 ?>
 
@@ -18,7 +24,7 @@
     <p> the number</p>
 
     <?php
-echo ($number*$multiplier);
+echo ($answer);
 
     ?>
 
