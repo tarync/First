@@ -4,7 +4,12 @@ $multiplier = $_POST['multiplier'];
 
 function multiply($numbera, $numberb)
 {
-  $result = ($numbera*$numberb);
+  $product = ($numbera*$numberb);
+  if ($product % 2 === 0) {
+    $result = "ping";
+  } else {
+    $result = "pong";
+  }
   return $result;
 }
 
@@ -24,7 +29,9 @@ $answer = multiply($number, $multiplier);
     <p> the number</p>
 
     <?php
-echo ($answer);
+    echo ($number)."*".($multiplier)."=";
+    echo ($number*$multiplier)." ";
+    echo "<p>".$answer."</p>"
 
     ?>
 
